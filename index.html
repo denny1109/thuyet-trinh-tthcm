@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A1220;--bg2:#101C33;--glass:rgba(255,255,255,.06);--gb:rgba(255,255,255,.12);--ink:#F2F5FA;--mut:#9BA9C2;--a:#FF6B5E;--b:#2DD4BF;--c:#FBBF24;--ok:#34D399;--bad:#FF6B5E;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark}}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#F4F7FB;--bg2:#E3EBF6;--glass:rgba(255,255,255,.75);--gb:rgba(20,35,60,.12);--ink:#0E1A2E;--mut:#52617C;--a:#D9382B;--b:#0E8F80;--c:#B7791F;--ok:#12805A;--bad:#D9382B}}
+:root[data-theme="light"]{--bg:#F4F7FB;--bg2:#E3EBF6;--glass:rgba(255,255,255,.75);--gb:rgba(20,35,60,.12);--ink:#0E1A2E;--mut:#52617C;--a:#D9382B;--b:#0E8F80;--c:#B7791F;--ok:#12805A;--bad:#D9382B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60% 50% at 85% 0%,color-mix(in srgb,var(--a) 28%,transparent),transparent),radial-gradient(50% 50% at 0% 100%,color-mix(in srgb,var(--b) 24%,transparent),transparent),linear-gradient(160deg,var(--bg),var(--bg2))}
+.prog{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;background:linear-gradient(90deg,var(--b),var(--c),var(--a));width:0;transition:width .4s;z-index:9}
+.top{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;display:flex;justify-content:space-between;padding:16px 28px;font-size:13px;color:var(--mut);z-index:8}
+.dots{display:flex;gap:8px;align-items:center}.dots i{width:8px;height:8px;border-radius:8px;background:var(--gb);transition:.3s;cursor:pointer}.dots i.on{width:26px;background:var(--a)}
+main{max-width:1080px;margin:0 auto;padding:84px 24px 120px;min-height:100vh}
+.slide{display:none}
+.slide.on{display:block;animation:in .5s cubic-bezier(.2,.8,.2,1)}
+.slide.back.on{animation-name:inb}
+@keyframes in{from{opacity:0;transform:translateX(40px)}}
+@keyframes inb{from{opacity:0;transform:translateX(-40px)}}
+@media (prefers-reduced-motion:reduce){.slide.on{animation:none}.prog,.dots i{transition:none}}
+.num{font-size:clamp(70px,13vw,150px);font-weight:800;line-height:.9;background:linear-gradient(135deg,var(--a),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent;margin:0}
+h1{font-size:clamp(34px,6.6vw,76px);line-height:1.08;margin:0 0 18px;font-weight:800;letter-spacing:-.025em;max-width:16ch}
+h2{font-size:clamp(26px,4.2vw,46px);line-height:1.15;margin:6px 0 8px;font-weight:800;letter-spacing:-.02em}
+.sub{font-size:clamp(15px,1.8vw,19px);color:var(--mut);margin:0 0 26px;max-width:60ch}
+.head{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-bottom:10px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--glass);border:1px solid var(--gb);border-radius:20px;padding:22px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.card h3{margin:0 0 8px;font-size:17px;font-weight:700;color:var(--b)}
+.card p,.card li{margin:0;font-size:15.5px;line-height:1.65;color:var(--ink)}.card ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.quote{margin:22px 0 0;padding:20px 24px;border-radius:20px;border:1px solid var(--gb);background:linear-gradient(135deg,color-mix(in srgb,var(--a) 20%,transparent),transparent);font-size:clamp(17px,2.4vw,24px);font-weight:500;font-style:italic;line-height:1.5}
+.quote small{display:block;margin-top:8px;font-size:13px;font-style:normal;color:var(--mut)}
+.fingers{display:flex;align-items:flex-end;gap:12px;height:250px;margin:34px 0 14px;max-width:640px}
+.fingers button{flex:1;border:1px solid var(--gb);border-radius:60px 60px 14px 14px;color:var(--ink);font:700 14px/1.3 "Be Vietnam Pro",sans-serif;padding:16px 4px;cursor:pointer;background:var(--glass);backdrop-filter:blur(10px);transition:transform .25s,background .25s}
+.fingers button:hover{transform:translateY(-8px);background:color-mix(in srgb,var(--a) 35%,transparent)}
+.fingers button span{display:block;font-size:22px;color:var(--c);margin-bottom:4px}
+.fingers button:nth-child(1){height:62%}.fingers button:nth-child(2){height:84%}.fingers button:nth-child(3){height:100%}.fingers button:nth-child(4){height:88%}.fingers button:nth-child(5){height:70%}
+.hint{font-size:14px;color:var(--mut)}
+.tl{display:flex;overflow-x:auto;gap:12px;padding:6px 2px 14px;margin-bottom:10px}
+.tl div{flex:0 0 168px;background:var(--glass);border:1px solid var(--gb);border-radius:16px;padding:12px 14px;font-size:13.5px;line-height:1.45}.tl b{display:block;color:var(--c);font-size:15px;margin-bottom:2px}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:12px;padding:16px 20px calc(16px + env(safe-area-inset-bottom,0px));z-index:8}
+nav button,.btn{font:700 15px "Be Vietnam Pro",sans-serif;border:1px solid var(--gb);background:var(--glass);color:var(--ink);padding:12px 26px;border-radius:999px;cursor:pointer;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav button.go{background:var(--a);border-color:var(--a);color:#fff}
+nav button:disabled{opacity:.35;cursor:default}
+button:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.q{background:var(--glass);border:1px solid var(--gb);border-radius:20px;padding:20px;margin-bottom:14px}
+.q p{margin:0 0 10px;font-weight:700;font-size:16.5px}
+.opt{display:block;width:100%;text-align:left;font:500 15px "Be Vietnam Pro",sans-serif;color:var(--ink);background:transparent;border:1px solid var(--gb);border-radius:12px;padding:11px 14px;margin:7px 0;cursor:pointer;transition:.2s}
+.opt:hover{border-color:var(--b)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 20%,transparent)}
+.opt.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 18%,transparent)}
+.exp{display:none;font-size:14px;color:var(--mut);margin-top:10px;line-height:1.55}
+.score{font-size:26px;font-weight:800;margin:14px 0;color:var(--c)}
+@media (max-width:600px){.top{padding:14px 16px}.fingers{height:210px;gap:8px}.fingers button{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="prog" id="pg"></div>
+<div class="top"><span>Tư tưởng Hồ Chí Minh · Chương 5, mục I</span><div class="dots" id="dots"></div></div>
+<main id="app"></main>
+<nav><button id="prev" onclick="step(-1)">Trước</button><button id="snd" onclick="toggleVoice()">Giọng đọc: Tắt</button><button id="next" class="go" onclick="step(1)">Tiếp</button></nav>
+<script>
+var P=[
+{n:1,t:'Vai trò của đại đoàn kết toàn dân tộc',s:'Vấn đề chiến lược, quyết định thành công của cách mạng',c:[['Chiến lược lâu dài, nhất quán','Đoàn kết toàn dân tộc là vấn đề có ý nghĩa chiến lược, quyết định thành công của cách mạng Việt Nam. Lúc nào dân ta đoàn kết thì nước độc lập, tự do; lúc nào không đoàn kết thì bị nước ngoài xâm lấn.'],['Mục tiêu, nhiệm vụ hàng đầu','Đại đoàn kết không chỉ là khẩu hiệu chiến lược mà còn là mục tiêu lâu dài của cách mạng. Đảng phải xác định đây là nhiệm vụ hàng đầu, quán triệt trong đường lối, chủ trương, chính sách và hoạt động thực tiễn.']],q:[['Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công.','Hồ Chí Minh'],['Mục đích của Đảng Lao động Việt Nam gồm trong 8 chữ: ĐOÀN KẾT TOÀN DÂN, PHỤNG SỰ TỔ QUỐC.','Ngày 3/3/1951, khi Đảng Lao động Việt Nam ra mắt']]},
+{n:2,t:'Lực lượng của khối đại đoàn kết',s:'Ai đoàn kết, và dựa vào ai làm nền tảng?',c:[['Chủ thể: toàn thể nhân dân','<ul><li>Mọi giai cấp, tầng lớp, dân tộc, tôn giáo, lứa tuổi, ngành nghề</li><li>Trong nước và ngoài nước</li><li>“Nhân dân” vừa là con người Việt Nam cụ thể, vừa là tập hợp đông đảo quần chúng</li></ul>'],['Nền tảng: liên minh công – nông – trí thức','<ul><li>Công nhân, nông dân và trí thức là lực lượng làm nền tảng</li><li>Nông dân là gốc của đại đoàn kết vì đông nhất và bị áp bức nặng nề nhất</li></ul>'],['Hạt nhân: Đảng Cộng sản Việt Nam','Đảng là lực lượng lãnh đạo, không có lợi ích riêng, chỉ vì lợi ích toàn dân tộc. Đảng đoàn kết thì khối đại đoàn kết mới vững.']],q:[['Ai có tài, có đức, có sức, có lòng phụng sự Tổ quốc và phục vụ nhân dân thì ta đoàn kết với họ.','']]},
+{n:3,t:'Điều kiện xây dựng khối đại đoàn kết',s:'Bốn điều kiện để đoàn kết được mọi giai cấp, tầng lớp',c:[['Lợi ích chung làm điểm quy tụ','Lấy mục tiêu độc lập, tự do, hạnh phúc của nhân dân làm điểm tương đồng, đồng thời tôn trọng những khác biệt chính đáng.'],['Kế thừa truyền thống dân tộc','Truyền thống yêu nước, nhân nghĩa, đoàn kết hàng nghìn năm là sức mạnh vô địch giúp dân tộc dựng nước và giữ nước.'],['Khoan dung, độ lượng với con người','Mỗi người có ưu điểm, khuyết điểm riêng, cần trân trọng phần thiện dù nhỏ nhất. “Năm ngón tay cũng có ngón vắn, ngón dài.”'],['Tin vào nhân dân','Dựa vào dân, tin dân. Nước lấy dân làm gốc; cách mạng là sự nghiệp của quần chúng, dân là chỗ dựa vững chắc của khối đại đoàn kết.']]},
+{n:4,t:'Hình thức: Mặt trận dân tộc thống nhất',s:'Nơi quy tụ mọi tổ chức và cá nhân yêu nước',tl:[['11/1930','Hội Phản đế đồng minh'],['3/1935','Hội Phản đế liên minh'],['10/1936','Mặt trận Thống nhất nhân dân phản đế Đông Dương'],['3/1938','Mặt trận Dân chủ Đông Dương'],['11/1939','Mặt trận Dân tộc Thống nhất phản đế Đông Dương'],['5/1941','Việt Minh'],['5/1946','Hội Liên Việt'],['3/1951','Mặt trận Liên Việt'],['1955','Mặt trận Tổ quốc Việt Nam (miền Bắc)'],['12/1960','Mặt trận Dân tộc giải phóng miền Nam'],['1977','Mặt trận Tổ quốc Việt Nam (cả nước)']],c:[['Nguyên tắc 1','Xây dựng trên nền tảng liên minh công – nông – trí thức, đặt dưới sự lãnh đạo của Đảng.'],['Nguyên tắc 2','Hoạt động theo hiệp thương dân chủ: mọi vấn đề được bàn bạc công khai để đi đến nhất trí.'],['Nguyên tắc 3','Đoàn kết lâu dài, chặt chẽ, thật sự, chân thành, thân ái giúp đỡ nhau cùng tiến bộ; “cầu đồng tồn dị”.']]},
+{n:5,t:'Phương thức xây dựng khối đại đoàn kết',s:'Làm thế nào để đại đoàn kết thành sức mạnh thực tế?',c:[['Làm tốt công tác dân vận','Dân vận là nhiệm vụ hàng đầu của Đảng. Phương pháp phải phù hợp tâm tư, nguyện vọng, trình độ của quần chúng và xuất phát từ lợi ích thiết thực của họ.'],['Thành lập đoàn thể, tổ chức quần chúng','Công đoàn, Hội Nông dân, Đoàn Thanh niên, Hội Phụ nữ… phù hợp từng đối tượng, giáo dục, động viên và phát huy tính tích cực của các tầng lớp nhân dân.'],['Tập hợp trong Mặt trận','Các đoàn thể được tập hợp trong Mặt trận. Mặt trận càng rộng rãi, chặt chẽ thì khối đại đoàn kết càng mạnh mẽ, bền vững.']],q:[['Dân là gốc của nước. Cách mạng là sự nghiệp của quần chúng.','']]}];
+var Q=[
+{q:'Theo Hồ Chí Minh, đại đoàn kết toàn dân tộc có ý nghĩa như thế nào đối với cách mạng?',o:['Chỉ là biện pháp tạm thời trong một giai đoạn','Là chiến lược lâu dài, nhất quán, quyết định thành công của cách mạng','Chỉ cần thiết khi có chiến tranh','Là việc riêng của Mặt trận'],a:1,e:'Đại đoàn kết là chiến lược lâu dài, nhất quán và quyết định thành công của cách mạng Việt Nam.'},
+{q:'Lực lượng nào được coi là nền tảng của khối đại đoàn kết toàn dân tộc?',o:['Liên minh công – nông – trí thức','Chỉ giai cấp công nhân','Các tổ chức tôn giáo','Các lực lượng ngoài nước'],a:0,e:'Nền tảng là liên minh công nhân, nông dân và trí thức, trong đó nông dân là gốc của đại đoàn kết.'},
+{q:'Câu “Năm ngón tay cũng có ngón vắn, ngón dài” nói về điều kiện nào?',o:['Lấy lợi ích chung làm điểm quy tụ','Kế thừa truyền thống dân tộc','Khoan dung, độ lượng với con người','Tin vào nhân dân'],a:2,e:'Mỗi người đều có ưu điểm và khuyết điểm, cần khoan dung và trân trọng phần thiện dù nhỏ nhất.'},
+{q:'Mặt trận dân tộc thống nhất hoạt động theo nguyên tắc nào?',o:['Tập trung quan liêu','Hiệp thương dân chủ','Mệnh lệnh hành chính','Đa số lấn át thiểu số'],a:1,e:'Mặt trận hoạt động theo nguyên tắc hiệp thương dân chủ: bàn bạc công khai để đi đến nhất trí.'},
+{q:'Theo Hồ Chí Minh, nhiệm vụ hàng đầu của Đảng để thực hiện đại đoàn kết là gì?',o:['Phát triển kinh tế','Làm tốt công tác vận động quần chúng (dân vận)','Mở rộng quân đội','Tăng cường ngoại giao'],a:1,e:'Dân vận là nhiệm vụ hàng đầu của Đảng; phải phù hợp tâm tư, nguyện vọng và lợi ích thiết thực của dân.'}];
+var names=['Vai trò','Lực lượng','Điều kiện','Hình thức','Phương thức'];
+var h='<section class="slide on"><h1>Tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc</h1><p class="sub">Năm ngón tay cũng có ngón vắn, ngón dài, nhưng cùng nhau lại nên bàn tay. Bấm vào từng ngón để đi tới phần tương ứng.</p><div class="fingers">';
+names.forEach(function(x,i){h+='<button onclick="go('+(i+1)+')"><span>'+(i+1)+'</span>'+x+'</button>'});
+h+='</div><p class="hint">Dùng phím ← → hoặc vuốt ngang để chuyển trang. Cuối bài có 5 câu hỏi nhỏ.</p></section>';
+P.forEach(function(p){h+='<section class="slide"><div class="head"><p class="num">'+p.n+'</p><div><h2>'+p.t+'</h2></div></div><p class="sub">'+p.s+'</p>';
+if(p.tl){h+='<div class="tl">';p.tl.forEach(function(x){h+='<div><b>'+x[0]+'</b>'+x[1]+'</div>'});h+='</div>'}
+h+='<div class="grid">';p.c.forEach(function(x){h+='<div class="card"><h3>'+x[0]+'</h3>'+(x[1].charAt(0)=='<'?x[1]:'<p>'+x[1]+'</p>')+'</div>'});h+='</div>';
+(p.q||[]).forEach(function(x){h+='<div class="quote">'+x[0]+(x[1]?'<small>'+x[1]+'</small>':'')+'</div>'});h+='</section>'});
+h+='<section class="slide"><div class="head"><p class="num">?</p><div><h2>Câu hỏi củng cố</h2></div></div><p class="sub">Chọn đáp án đúng cho mỗi câu. Kết quả hiện ngay sau khi chọn.</p><div id="quiz"></div><div class="score" id="score"></div><button class="btn" onclick="render()">Làm lại</button></section>';
+document.getElementById('app').innerHTML=h;
+var S=document.querySelectorAll('.slide'),cur=0,D=document.getElementById('dots');
+S.forEach(function(_,i){var d=document.createElement('i');d.onclick=function(){go(i)};D.appendChild(d)});
+function go(n){n=Math.max(0,Math.min(S.length-1,n));var bk=n<cur;cur=n;S.forEach(function(s,i){s.classList.toggle('on',i===n);s.classList.toggle('back',bk)});
+D.childNodes.forEach(function(d,i){d.classList.toggle('on',i===n)});
+document.getElementById('pg').style.width=(n/(S.length-1)*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===S.length-1;window.scrollTo(0,0);say()}
+function step(d){go(cur+d)}
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+var tx=0;document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>80&&!e.target.closest('.tl'))step(d<0?1:-1)});
+var done,right;
+function render(){var s='';done=0;right=0;document.getElementById('score').textContent='';
+Q.forEach(function(x,i){s+='<div class="q"><p>Câu '+(i+1)+'. '+x.q+'</p>';x.o.forEach(function(t,j){s+='<button class="opt" data-q="'+i+'" data-o="'+j+'">'+t+'</button>'});s+='<div class="exp" id="e'+i+'">'+x.e+'</div></div>'});
+document.getElementById('quiz').innerHTML=s}
+document.getElementById('quiz').addEventListener('click',function(ev){var b=ev.target.closest('.opt');if(!b)return;var i=+b.dataset.q,j=+b.dataset.o,bx=b.parentNode;if(bx.dataset.done)return;bx.dataset.done=1;
+bx.querySelectorAll('.opt')[Q[i].a].classList.add('right');if(j===Q[i].a)right++;else b.classList.add('wrong');
+document.getElementById('e'+i).style.display='block';done++;if(done===Q.length)document.getElementById('score').textContent='Kết quả: '+right+'/'+Q.length+' câu đúng'});
+var voiceOn=false,N=[
+'Xin chào mọi người. Hôm nay chúng ta cùng tìm hiểu tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân tộc. Nội dung gồm năm phần: vai trò, lực lượng, điều kiện, hình thức tổ chức và phương thức xây dựng khối đại đoàn kết. Bác Hồ từng nói: năm ngón tay cũng có ngón vắn, ngón dài, nhưng cùng nhau lại nên bàn tay.',
+'Phần một: vai trò của đại đoàn kết toàn dân tộc. Theo Hồ Chí Minh, đoàn kết là chiến lược lâu dài, nhất quán của cách mạng Việt Nam và quyết định thành công của cách mạng. Lúc nào dân ta đoàn kết thì nước độc lập, tự do. Lúc nào không đoàn kết thì bị nước ngoài xâm lấn. Đại đoàn kết không chỉ là khẩu hiệu chiến lược, mà còn là mục tiêu, nhiệm vụ hàng đầu của cách mạng. Ngày ba tháng ba năm một nghìn chín trăm năm mươi mốt, khi Đảng Lao động Việt Nam ra mắt, Người tuyên bố mục đích của Đảng gồm trong tám chữ: đoàn kết toàn dân, phụng sự Tổ quốc.',
+'Phần hai: lực lượng của khối đại đoàn kết. Chủ thể của khối đại đoàn kết là toàn thể nhân dân, gồm mọi giai cấp, tầng lớp, dân tộc, tôn giáo, lứa tuổi, ngành nghề, ở trong nước và ngoài nước. Nền tảng của khối đại đoàn kết là liên minh công nhân, nông dân và trí thức, trong đó nông dân là gốc vì đông nhất và bị áp bức nặng nề nhất. Đảng Cộng sản Việt Nam là lực lượng lãnh đạo, là hạt nhân của khối đại đoàn kết, vì Đảng không có lợi ích riêng mà chỉ vì lợi ích toàn dân tộc. Người nói: ai có tài, có đức, có sức, có lòng phụng sự Tổ quốc và phục vụ nhân dân thì ta đoàn kết với họ.',
+'Phần ba: điều kiện để xây dựng khối đại đoàn kết. Có bốn điều kiện. Một, lấy lợi ích chung làm điểm quy tụ, đồng thời tôn trọng những khác biệt chính đáng. Hai, kế thừa truyền thống yêu nước, nhân nghĩa, đoàn kết của dân tộc. Ba, phải có lòng khoan dung, độ lượng với con người, trân trọng phần thiện dù nhỏ nhất, như năm ngón tay có ngón vắn, ngón dài. Bốn, phải có niềm tin vào nhân dân, vì nước lấy dân làm gốc và cách mạng là sự nghiệp của quần chúng.',
+'Phần bốn: hình thức tổ chức của khối đại đoàn kết là Mặt trận dân tộc thống nhất. Qua từng giai đoạn lịch sử, Mặt trận có những tên gọi khác nhau, từ Hội Phản đế đồng minh, Việt Minh, Hội Liên Việt, Mặt trận Liên Việt, cho đến Mặt trận Tổ quốc Việt Nam, nhưng bản chất vẫn là tập hợp đông đảo các tầng lớp nhân dân vì mục tiêu chung. Mặt trận hoạt động theo ba nguyên tắc. Một, xây dựng trên nền tảng liên minh công nông trí thức, dưới sự lãnh đạo của Đảng. Hai, hoạt động theo nguyên tắc hiệp thương dân chủ. Ba, đoàn kết lâu dài, chặt chẽ, thật sự, chân thành, thân ái giúp đỡ nhau cùng tiến bộ, theo phương châm cầu đồng tồn dị.',
+'Phần năm: phương thức xây dựng khối đại đoàn kết. Thứ nhất, làm tốt công tác vận động quần chúng, hay còn gọi là dân vận, vì đây là nhiệm vụ hàng đầu của Đảng. Phương pháp phải phù hợp với tâm tư, nguyện vọng và lợi ích thiết thực của nhân dân. Thứ hai, thành lập các đoàn thể, tổ chức quần chúng phù hợp với từng đối tượng, như Công đoàn, Hội Nông dân, Đoàn Thanh niên, Hội Phụ nữ. Thứ ba, tập hợp các đoàn thể đó trong Mặt trận. Mặt trận càng rộng rãi, chặt chẽ thì khối đại đoàn kết càng mạnh mẽ, bền vững.',
+'Đến đây là phần câu hỏi củng cố. Mời các bạn chọn đáp án đúng cho từng câu trong năm câu hỏi. Kết quả và lời giải thích sẽ hiện ngay sau khi chọn.'];
+function pickVoice(){var v=speechSynthesis.getVoices();for(var i=0;i<v.length;i++)if(/^vi/i.test(v[i].lang))return v[i];return null}
+function say(){if(!('speechSynthesis' in window))return;speechSynthesis.cancel();if(!voiceOn)return;var t=N[cur]||'',ps=t.match(/[^.!?]+[.!?]*/g)||[t],v=pickVoice();ps.forEach(function(s){var u=new SpeechSynthesisUtterance(s.trim());u.lang='vi-VN';if(v)u.voice=v;u.rate=.95;speechSynthesis.speak(u)})}
+function toggleVoice(){if(!('speechSynthesis' in window)){alert('Trình duyệt này không hỗ trợ đọc giọng nói. Hãy thử Chrome hoặc Edge.');return}
+voiceOn=!voiceOn;document.getElementById('snd').textContent='Giọng đọc: '+(voiceOn?'Bật':'Tắt');
+if(voiceOn&&speechSynthesis.getVoices().length&&!pickVoice())alert('Máy chưa có giọng đọc tiếng Việt, nên giọng đọc có thể không đúng. Hãy cài giọng tiếng Việt trong phần Cài đặt ngôn ngữ của hệ điều hành.');
+say()}
+if('speechSynthesis' in window)speechSynthesis.onvoiceschanged=function(){};
+render();go(0);
+</script>
+</body>
+</html>
